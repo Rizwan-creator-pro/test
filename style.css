@@ -1,0 +1,58 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+header nav ul li a,
+#image-group,
+#about-images
+{
+    transition: all 0.7s;    
+}
+header nav ul li a:hover{
+    background-color: #c7c5c57b;
+}
+#hero-section{
+    background: url(assets/images/architect.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+#a-text{
+    letter-spacing: 2px;
+}
+#Custom-Width{
+    width: 97%;
+    margin: 0 auto;
+}
+    #image-group img,
+    #about-images,
+    #custom_shadow
+    {
+        cursor: pointer;
+        box-shadow: 2px 3px 5px 0 rgba(0,0,0,0.16), 2px 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    #about-images{
+        filter: grayscale(75%);
+    }
+#image-group:hover,
+#about-images:hover{
+    scale: 1.05;
+}
+@media  (max-width:574px) {
+    #hero-section{
+        height: 60vh !important;
+    }
+}
